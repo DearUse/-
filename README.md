@@ -90,7 +90,7 @@
 
 ####   <PayMentKeyBoard ref="keyboard" @inputNum="listenValue" :maxLength="4"></PayMentKeyBoard>
   #upKeyWin()为调起键盘方法   colseKeyWin()关闭键盘方法
-#####     1. *this.$refs.keyboard.upKeyWin(); 
-#####     2. *this.$refs.keyboard.colseKeyWin();
-#####     3. *maxLength 最少输入长度
-#####     4. *输入完成自动触发inputNum中的方法listenValue()
+#####     1. this.$refs.keyboard.upKeyWin(); 
+#####     2. this.$refs.keyboard.colseKeyWin();
+#####     3. maxLength 最少输入长度
+#####     4. 输入完成自动触发inputNum中的方法listenValue()
