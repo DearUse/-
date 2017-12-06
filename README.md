@@ -1,38 +1,5 @@
-[TOC]
 
-#### Disabled options
-
-- TeX (Based on KaTeX);
-- Emoji;
-- Task lists;
-- HTML tags decode;
-- Flowchart and Sequence Diagram;
-
-#### Editor.md directory
-
-    editor.md/
-            lib/
-            css/
-            scss/
-            tests/
-            fonts/
-            images/
-            plugins/
-            examples/
-            languages/     
-            editormd.js
-            ...
-
-```html
-<!-- English -->
-<script src="../dist/js/languages/en.js"></script>
-
-<!-- 繁體中文 -->
-<script src="../dist/js/languages/zh-tw.js"></script>
-```
-
-
-# #环境搭建
+# #环境搭建  已搭建
 #####   npm install stylus stylus-loader --save-dev
 #####   npm install --save axios vue-axios- 
 #####   npm install vux --save                     vux组件需依赖一下3个vux-loader css-loader less-loader
