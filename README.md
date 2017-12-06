@@ -1,5 +1,37 @@
 [TOC]
 
+#### Disabled options
+
+- TeX (Based on KaTeX);
+- Emoji;
+- Task lists;
+- HTML tags decode;
+- Flowchart and Sequence Diagram;
+
+#### Editor.md directory
+
+    editor.md/
+            lib/
+            css/
+            scss/
+            tests/
+            fonts/
+            images/
+            plugins/
+            examples/
+            languages/     
+            editormd.js
+            ...
+
+```html
+<!-- English -->
+<script src="../dist/js/languages/en.js"></script>
+
+<!-- 繁體中文 -->
+<script src="../dist/js/languages/zh-tw.js"></script>
+```
+
+
 # #环境搭建
 #####   npm install stylus stylus-loader --save-dev
 #####   npm install --save axios vue-axios- 
@@ -33,11 +65,14 @@
       Vue.use(VueAxios, axios)
 
   #npm install --save axios vue-axios
+  
     @import Axios from 'axios'
     Vue.config.productionTip = false;
     Vue.prototype.$ajax = Axios;
     Axios.defaults.withCredentials = true;
+	
   #npm install vuex --save-deb
+  
     @新建文件夹statusControl/status.js
       import Vue from 'vue'
       import Vuex from 'vuex'
@@ -49,12 +84,13 @@
       new Vue({
         store,
       })
-
+	  
+	  
 #插件使用
 
-  <PayMentKeyBoard ref="keyboard" @inputNum="listenValue" :maxLength="4"></PayMentKeyBoard>
+####   <PayMentKeyBoard ref="keyboard" @inputNum="listenValue" :maxLength="4"></PayMentKeyBoard>
   #upKeyWin()为调起键盘方法   colseKeyWin()关闭键盘方法
-    1. *this.$refs.keyboard.upKeyWin(); 
-    2. *this.$refs.keyboard.colseKeyWin();
-    3. *maxLength 最少输入长度
-    4. *输入完成自动触发inputNum中的方法listenValue()
+#####     1. *this.$refs.keyboard.upKeyWin(); 
+#####     2. *this.$refs.keyboard.colseKeyWin();
+#####     3. *maxLength 最少输入长度
+#####     4. *输入完成自动触发inputNum中的方法listenValue()
